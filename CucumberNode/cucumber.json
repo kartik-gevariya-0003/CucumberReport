@@ -1,0 +1,88 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "id": "this-feature-file-is-created-and-corresponding-done-file-is-created-and-then-moved-to-inbound-directory.once-the-file-is-processed-we-verify-if-it-is-moved-succesfully-to-s3-and-also-updated-transaction-on-rds.;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10071184175,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "I create the files in \"/home/ec2-user/cucumber/cucumber/test_data/sftp_pipeline/\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/home/ec2-user/cucumber/cucumber/test_data/sftp_pipeline/",
+                  "offset": 23
+                }
+              ],
+              "location": "features/step_definitions/localtosftp.rb:23"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@bde_gateway"
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "",
+        "description": "",
+        "id": "this-feature-file-is-created-and-corresponding-done-file-is-created-and-then-moved-to-inbound-directory.once-the-file-is-processed-we-verify-if-it-is-moved-succesfully-to-s3-and-also-updated-transaction-on-rds.;;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1155339010,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I move the files from test data folder \"localtosftp_testDataPath\" to cfr server path \"localtosftp_cfrdatapath\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "localtosftp_testDataPath",
+                  "offset": 40
+                },
+                {
+                  "val": "localtosftp_cfrdatapath",
+                  "offset": 86
+                }
+              ],
+              "location": "features/step_definitions/localtosftp.rb:50"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@bde_gateway"
+          }
+        ]
+      }
+    ],
+    "name": "This feature file is created and corresponding done file is created and then moved to inbound directory.Once the file is processed we verify if it is moved succesfully to s3 and also updated transaction on RDS.",
+    "description": "",
+    "id": "this-feature-file-is-created-and-corresponding-done-file-is-created-and-then-moved-to-inbound-directory.once-the-file-is-processed-we-verify-if-it-is-moved-succesfully-to-s3-and-also-updated-transaction-on-rds.",
+    "keyword": "Feature",
+    "uri": "features/localtosftp.feature"
+  }
+]
